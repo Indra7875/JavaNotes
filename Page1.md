@@ -30,6 +30,7 @@
   - With the help of constructor we can initillize non-static members during the object creation. <br>
   
   **5) What is difference between constructor and method ?** <br>
+  
 | No |                               Constructor                              |                   Method                  |
 |:--:|:----------------------------------------------------------------------:|:-----------------------------------------:|
 | 1. |               Constructor must have same name as a class.              |    We can give any name to the method.    |
