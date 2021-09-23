@@ -6,7 +6,7 @@
 - Non-static members creates it's object inside heap memory. To access non-static members we need to create an object.
 - We can access static members directly, with the help of class name as a reference, object as a reference.
 - We can access non-static members only with the help of object as reference. 
-- <br> 
+ <br> 
 **2) Static Block**
 - Static block is also called as static initializer block.
 - static block get's its memory inside static area.
@@ -25,7 +25,7 @@
  - Non-static block executed top to bottom order.
  - We can have more than one non-static blocks. 
   <br>
-  **4) What is use of constructor ?**
+  **4) What is use of constructor ?**<br>
   - With the help of constructor we can initillize non-static members during the object creation.
   - <br>
   
