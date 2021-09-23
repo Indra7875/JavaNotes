@@ -31,9 +31,4 @@
   
   **5) What is difference between constructor and method ?** <br>
   
-| No |                               Constructor                              |                   Method                  |
-|:--:|:----------------------------------------------------------------------:|:-----------------------------------------:|
-| 1. |               Constructor must have same name as a class.              |    We can give any name to the method.    |
-| 2. |               Constructor does not have any return type.               |          Method have return type.         |
-| 3. | Constructor is called only once at the time of during object creation. | Method can be called any number of times. |
 
