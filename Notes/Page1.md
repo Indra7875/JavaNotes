@@ -61,6 +61,7 @@
   i) Getter method (To read the private memebers)
   ii) Setter method (To modify the private members)
 - In my project I use encapsulation concept to create Entity Class.
+
 ```
 package Encapsulation;
 
