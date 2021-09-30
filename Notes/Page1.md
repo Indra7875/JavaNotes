@@ -44,11 +44,12 @@
 - properties(variable) and behaviour (methods)
   
 **Which are pillers of OOP's ?**
-1) Encapsulation
-2) Inheritance
-3) Polymorphism
-4) Abstraction
-5) Interface
+
+1) Encapsulation <br>
+2) Inheritance   <br>
+3) Polymorphism  <br>
+4) Abstraction  <br>
+5) Interface <br>
 
 **What is encapsulation ?**
 - The process of binding proprties and behaviour of an object together is called as encapsulation.
@@ -164,8 +165,8 @@ ii) Run Time Polymorphism
 
 1) Compile Time Polymorphism 
 - The binding between method calling statement and method implementation during compile time is called as compile time polymorphism.
-- We can achive compile time polymorphism in two ways.
-  __i) Method Overloading__
+- We can achive compile time polymorphism in two ways. <br>
+  __i) Method Overloading__ <br>
   - If our class having more than one methods which have same name and different number/types of arguments then method overloading is possible.
 
 ```
