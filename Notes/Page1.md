@@ -61,8 +61,50 @@
   i) Getter method (To read the private memebers)
   ii) Setter method (To modify the private members)
 - In my project I use encapsulation concept to create Entity Class.
+```
+package Encapsulation;
+
+public class Fruit {
+    private String test;
+    private int rating;
+
+    // Getters and setter Method
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+}
+
+package Encapsulation;
+
+public class Mango extends Fruit
+{
+    public static void main(String[] args) {
+        Mango m1 = new Mango();
+        m1.setTest("So Sweet");
+        m1.setRating(5);
+
+        System.out.println(m1.getTest());
+        System.out.println(m1.getRating());
+    }
+}
+
+```
 
 **What is Inheritance ?**
+![inheritance1]()
 - The process of acquring the properties and behaviour of parent class to the child class is called as inheritance.
 - Parent class is aslo called as superclass and child class is also called as subclass.
 - Advantage : Reusability
@@ -70,8 +112,24 @@
 - Here non-static memebers of parent class are inherited to the child class object so that we can reuse members of parent class.
 - static memebers do not inherited (static memebers stored in seprate block of memory i.e. in static area) but then they give us fell of inheritance by converting a statement.
 - In my project I use inheritance concept for creating service layer.
+```
+package non_static_inheritance;
 
+public class A {
+     static int i = 10;
+}
+
+package non_static_inheritance;
+
+public class B extends A {
+    public static void main(String[] args) {
+        System.out.println(B.i); //non_static_inheritance.A.i
+    }
+}
+
+```
 **Which are the different types of inhertiance ?**
+![inheritance2]()
 - 1) Single Inheritance
 - 2) Muti-level Inheritance
 - 3) Hirarchical Inheritance
@@ -82,6 +140,7 @@
 
 **Why multiple inheritance is not possible in class level ?**
 **What is Diamand Problem ?**
+![DimandProblem]()
 - Here sub class 'C' extends two super classes A and B.
 - And if we try to create object for sub class 'C'.
 - During the object creation the constructor of class 'C' is been called.
@@ -102,10 +161,57 @@ ii) Run Time Polymorphism
 - We can achive compile time polymorphism in two ways.
   __i) Method Overloading__
   - If our class having more than one methods which have same name and different number/types of arguments then method overloading is possible.
+
+```
+public class MethodOverloading {
+    public static void test()
+    {
+        System.out.println("test()");
+    }
+    public static void test(int a)
+    {
+        System.out.println("test(int a)");
+    }
+    public static void test(int a, int b,String c)
+    {
+        System.out.println("test(int a, int b,String c)");
+    }
+    public static void main(String[] args) {
+        test();
+        test(10);
+        test(100,200,"Hello");
+    }
+}
+
+```
  __ii) Constructor Overloading__
   -  If our class having more than one constructors which have same name and different number/types of arguments then constructor overloading is possible.
 
-2) Run Time Polymorphism 
+```
+public class ConstructorOverloading {
+    ConstructorOverloading()
+    {
+        System.out.println("from ConstructorOverloading()");
+    }
+    ConstructorOverloading(int a)
+    {
+        System.out.println("from ConstructorOverloading(int a)");
+    }
+    ConstructorOverloading(char ch, float f, double b)
+    {
+        System.out.println("from ConstructorOverloading(char ch, float f, double b)");
+    }
+
+    public static void main(String[] args) {
+        ConstructorOverloading c1 = new ConstructorOverloading();
+        ConstructorOverloading c2 = new ConstructorOverloading(10);
+        ConstructorOverloading c3 = new ConstructorOverloading('a',20.5f,40.8);
+    }
+}
+
+```
+
+1) Run Time Polymorphism 
 - The binding between method calling statement and method implementation during run time is called as run time polymorphism.
 - We can achive run time polymorphism in
 i) Derived Type Casting/ Class Casting /Dynamic Dispatch
@@ -118,6 +224,77 @@ a) Upcasting :-
 - We can not access child class members.
 - Upcasting is done by compiler automatically so it is also called as auto-upcasting.
 - In upcasting if overriding is happends then overriding method is get called not overrideen.
+
+```
+package derivedTypeCasting.Upcasting;
+public class GrandParent {
+    public void fromGrandParent(){
+        System.out.println("I am fromGrandParent()");
+    }
+}
+
+package derivedTypeCasting.Upcasting;
+public class Parent extends GrandParent {
+    public void fromParent(){
+        System.out.println("I am fromParent()");
+    }
+}
+
+package derivedTypeCasting.Upcasting;
+public class Child extends Parent {
+    public void fromChild(){
+        System.out.println("I am fromChild()");
+    }
+
+    public static void main(String[] args) {
+        Child child1 = new Child();
+        Parent parent1 = new Child();
+        GrandParent grandParent1 = new Child();
+
+        child1.fromChild();
+        child1.fromParent();
+        child1.fromGrandParent();
+
+        parent1.fromParent();
+        parent1.fromGrandParent();
+
+        grandParent1.fromGrandParent();
+
+
+    }
+}
+
+```
+```
+package methodOverriding_upcasting;
+
+public class CreaditAccount {
+    int a = 10;
+    public void withdrawMoney(){
+        System.out.println("It withdraw the money"+ a);
+        System.out.println(a);
+    }
+}
+
+package methodOverriding_upcasting;
+import methodOverriding.CreaditAccount;
+
+public class GoldAccount extends CreaditAccount {
+    int a = 20;
+    public  void withdrawMoney(){
+        System.out.println("It withdraw the money which is limit upto 10,00000 in one day " + a);
+        System.out.println(a);
+    }
+
+    public static void main(String[] args) {
+        CreaditAccount c1 = new GoldAccount();
+        c1.withdrawMoney();
+    }
+
+}
+
+
+```
 b) Downcasting :-
 - In downcasting object of parent class is created that parent class object referance is stored in child class referance variable.
 - In downcasting we can not able to access any members (even parent class members)
@@ -135,6 +312,41 @@ b) Downcasting :-
   d) They should have same return type.
   i.e. Method signature should same.
 
+```
+package methodOverriding;
+public class CreaditAccount{
+    public void withdrawMoney(){
+        System.out.println("It withdraw the money");
+    }
+}
+
+package methodOverriding;
+public class GoldAccount extends CreaditAccount {
+    @Override
+    public void withdrawMoney(){
+        System.out.println("It withdraw the money which is limit upto 10,00000 in one day");
+    }
+
+    public static void main(String[] args) {
+        GoldAccount g1 = new GoldAccount();
+        g1.withdrawMoney();
+    }
+}
+
+package methodOverriding;
+public class SilverAccount extends CreaditAccount{
+    @Override
+    public void withdrawMoney(){
+        System.out.println("It withdraw the money which is limit upto 10,000 in one day");
+    }
+
+    public static void main(String[] args) {
+        SilverAccount g1 = new SilverAccount();
+        g1.withdrawMoney();
+    }
+}
+
+```
 **What is method hiding/ method shadowing ?**
 - We can not achive method overriding with the help of static members.
 - All static memebers will be allocated with the different block of memory.
@@ -142,6 +354,7 @@ b) Downcasting :-
 - Therefore we can call it as method hiding or method shadowing.
     
 **What is interface ?**
+![interface]()
 - Interface is blueprint of the class.
 - Interface is consist of following members
   i) Abstract(incomplete) non-static method.
