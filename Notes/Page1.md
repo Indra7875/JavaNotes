@@ -105,7 +105,9 @@ public class Mango extends Fruit
 ```
 
 **What is Inheritance ?**
+
 ![inheritance1](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png)
+<br>
 - The process of acquring the properties and behaviour of parent class to the child class is called as inheritance.
 - Parent class is aslo called as superclass and child class is also called as subclass.
 - Advantage : Reusability
@@ -113,6 +115,7 @@ public class Mango extends Fruit
 - Here non-static memebers of parent class are inherited to the child class object so that we can reuse members of parent class.
 - static memebers do not inherited (static memebers stored in seprate block of memory i.e. in static area) but then they give us fell of inheritance by converting a statement.
 - In my project I use inheritance concept for creating service layer.
+
 ```
 package non_static_inheritance;
 
@@ -130,7 +133,9 @@ public class B extends A {
 
 ```
 **Which are the different types of inhertiance ?**
+
 ![inheritance2](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/Inheritance2.png)
+<br>
 - 1) Single Inheritance
 - 2) Muti-level Inheritance
 - 3) Hirarchical Inheritance
@@ -141,7 +146,9 @@ public class B extends A {
 
 **Why multiple inheritance is not possible in class level ?**
 **What is Diamand Problem ?**
+
 ![DimandProblem](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/DimandProblem.png)
+<br>
 - Here sub class 'C' extends two super classes A and B.
 - And if we try to create object for sub class 'C'.
 - During the object creation the constructor of class 'C' is been called.
@@ -294,7 +301,6 @@ public class GoldAccount extends CreaditAccount {
 
 }
 
-
 ```
 b) Downcasting :-
 - In downcasting object of parent class is created that parent class object referance is stored in child class referance variable.
@@ -355,7 +361,9 @@ public class SilverAccount extends CreaditAccount{
 - Therefore we can call it as method hiding or method shadowing.
     
 **What is interface ?**
+
 ![interface](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/Interface.png)
+<br>
 - Interface is blueprint of the class.
 - Interface is consist of following members
   i) Abstract(incomplete) non-static method.
