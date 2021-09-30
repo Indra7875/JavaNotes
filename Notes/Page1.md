@@ -165,7 +165,7 @@ ii) Run Time Polymorphism
 
 1) Compile Time Polymorphism 
 - The binding between method calling statement and method implementation during compile time is called as compile time polymorphism.
-- We can achive compile time polymorphism in two ways. <br>
+- We can achive compile time polymorphism in two ways: i) Method Overloading ii) Constructor Overlaoding <br>
   __i) Method Overloading__ <br>
   - If our class having more than one methods which have same name and different number/types of arguments then method overloading is possible.
 
