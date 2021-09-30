@@ -64,7 +64,6 @@
 
 ```
 package Encapsulation;
-
 public class Fruit {
     private String test;
     private int rating;
@@ -89,7 +88,6 @@ public class Fruit {
 }
 
 package Encapsulation;
-
 public class Mango extends Fruit
 {
     public static void main(String[] args) {
