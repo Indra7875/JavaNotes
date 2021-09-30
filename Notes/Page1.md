@@ -162,6 +162,6 @@ b) Downcasting :-
 - __Array :__ If you make array as a final then it's size can not be altered but we can re-initillize it's value.
 - __Class:__ If you make class as a final we can not inherited that class.
 - __Method:__ If you make method as a final then we can not override that method.
-- ******************
+- *******************
 
 
