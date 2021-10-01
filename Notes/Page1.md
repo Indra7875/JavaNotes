@@ -362,7 +362,7 @@ public class SilverAccount extends CreaditAccount{
     
 **What is interface ?**
 
-![interface](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/Interface.png)
+![interface](https://github.com/Indra7875/JavaNotes/blob/6fb52b31304e8c24d17306a68cebe08070a6a9f0/Pictures/Interface.png)
 <br>
 - Interface is blueprint of the class.
 - Interface is consist of following members
