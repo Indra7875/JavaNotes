@@ -105,7 +105,7 @@ public class Mango extends Fruit
 
 **What is Inheritance ?**
 
- ![inheritance1] (https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png)
+ ![inheritance1](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png)
 
 <br>
 - The process of acquring the properties and behaviour of parent class to the child class is called as inheritance.
