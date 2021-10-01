@@ -106,8 +106,6 @@ public class Mango extends Fruit
 **What is Inheritance ?**
 
 ![inheritance1](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png)
-![inheritance1](https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png)
-<img src="https://github.com/Indra7875/JavaNotes/blob/master/Pictures/inheritance1.png" alt="inheritance1" style="height: 100px; width:100px;"/>
 <br>
 - The process of acquring the properties and behaviour of parent class to the child class is called as inheritance.
 - Parent class is aslo called as superclass and child class is also called as subclass.
