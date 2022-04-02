@@ -1,6 +1,6 @@
 ---
 layout: default
-title: An Ultimate JavaLabs Hands-on Labs
+title: An Ultimate JavaNotes 
 nav_order: 1
 description: " An Ultimate JavaNotes Hands-on"
 permalink: /
